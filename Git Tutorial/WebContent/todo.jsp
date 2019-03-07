@@ -18,11 +18,11 @@ request.setCharacterEncoding("UTF-8");
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>YJ's Todo</title>
 </head>
 <body>
 <div>
-	<h1>wjlee's todos</h1>
+	<h1>YJ's todos</h1>
 	<hr>
 <%
 	while(rs.next()) {
