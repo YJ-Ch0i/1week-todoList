@@ -6,7 +6,7 @@ request.setCharacterEncoding("UTF-8");
 	Statement stmt = null;
 	ResultSet rs = null;
 	Class.forName("com.mysql.jdbc.Driver");
-	Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/todos?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false", "root", "cs1234");
+	Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/todos?serverTimezone=UTC", "root", "cs1234");
 //	Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/todos", "root", "cs1234");
 	String item = request.getParameter("todo-item");
 	String sql = "insert into todo(item) values('" + item + "')";  
